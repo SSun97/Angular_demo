@@ -1,0 +1,16 @@
+
+<style>
+  div>span{
+    margin: 20px;
+    padding: 5px 10px;
+    background-color: skyblue;
+  }
+</style>
+
+<div>
+  <span [routerLink]="['/']" routerLinkActive="router-link-active">Front page</span>
+  <span [routerLink]="['/about']" routerLinkActive="router-link-active"> about </span>
+  <span [routerLink]="['/news']" routerLinkActive="router-link-active">news</span>
+</div>
+
+<router-outlet></router-outlet>
