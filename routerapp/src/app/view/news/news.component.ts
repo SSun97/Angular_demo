@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 @Component({
   selector: 'app-news',
   templateUrl: './news.component.html',
@@ -7,7 +7,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class NewsComponent implements OnInit {
 
-  constructor(public route:ActivatedRoute) { 
+  constructor(public route:ActivatedRoute, public router:Router) { 
     // http://localhost:4200/news/123?search=meinv#abc
     console.log(this.route.snapshot.params);
     console.log(this.route.snapshot.queryParams);
@@ -15,6 +15,15 @@ export class NewsComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  goHome(){
+    this.router.navigate(['news', '123'], {
+      queryParams: {
+        username: 'admin',
+      },
+      fragment: 'abc'
+    });
   }
 
 }

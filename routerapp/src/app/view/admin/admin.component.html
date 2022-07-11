@@ -1,0 +1,24 @@
+<p>admin works!</p>
+<style>
+  .admin{
+    display: flex;
+  }
+  .admin .left {
+    width: 200px;
+    height: 500px;
+    background-color: skyblue;
+  }
+  .admin .main{
+    flex: 1;
+    background: lavenderblush;
+  }
+</style>
+<div class="admin">
+  <div class="left">
+    <div [routerLink]="['/admin/user']" routerLinkActive="router-link-active">user</div>
+    <div [routerLink]="['/admin/product']" routerLinkActive="router-link-active">product</div>
+  </div>
+  <div class="main">
+    <router-outlet></router-outlet>
+  </div>
+</div>
