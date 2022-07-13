@@ -1,0 +1,35 @@
+<div class="main">
+  <div class="mainLeft">
+    <div class="zhishu">
+      <div class="zhishuList">
+        <div class="zhishuItem" *ngFor="let item of quoteList">
+          <div class="zhishuItemLeft">
+            <h3>{{item.quote.name}}</h3>
+            <div>{{item.quote.current}}</div>
+            <p>+{{item.quote.chg}}(+{{item.quote.percent}}%)</p>
+          </div>
+          <div class="svg">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              style="width: 80px; height: 32.8px"
+            >
+              <path class="StockSlider_last-close_3k-" d="M0 20 L80 20"></path>
+              <path
+                class="StockSlider_polyline_YMO"
+                d="M0 20 L0 21 L0 20 L0 21 L1 21 L1 20 L1 22 L2 23 L2 23 L2 24 L3 22 L3 22 L3 21 L4 22 L4 22 L4 22 L5 23 L5 23 L5 23 L6 24 L6 24 L6 26 L7 25 L7 23 L7 24 L8 25 L8 25 L8 26 L9 24 L9 24 L9 22 L10 21 L10 21 L10 20 L11 19 L11 18 L11 18 L12 17 L12 18 L12 18 L13 18 L13 19 L13 19 L14 20 L14 20 L14 20 L15 21 L15 21 L15 21 L16 22 L16 22 L16 22 L17 22 L17 21 L17 20 L18 21 L18 22 L18 23 L19 24 L19 22 L19 22 L20 23 L20 22 L20 22 L21 22 L21 23 L21 23 L22 24 L22 24 L22 24 L23 23 L23 24 L23 24 L24 25 L24 25 L24 25 L25 25 L25 26 L25 27 L26 27 L26 26 L26 26 L27 27 L27 26 L27 27 L28 28 L28 27 L28 27 L29 26 L29 26 L29 27 L30 26 L30 26 L30 28 L31 29 L31 29 L31 30 L32 30 L32 29 L32 29 L33 29 L33 29 L33 29 L34 30 L34 30 L34 31 L35 32 L35 32 L35 32 L36 33 L36 33 L36 32 L37 32 L37 32 L37 32 L38 33 L38 34 L38 34 L39 35 L39 35 L39 35 L40 35 L40 36 L40 35 L40 34 L41 33 L41 32 L41 31 L42 31 L42 32 L42 32 L43 31 L43 30 L43 29 L44 30 L44 30 L44 32 L45 32 L45 31 L45 32 L46 32 L46 30 L46 28 L47 27 L47 27 L47 26 L48 26 L48 26 L48 25 L49 25 L49 26 L49 27 L50 26 L50 26 L50 27 L51 27 L51 26 L51 27 L52 27 L52 28 L52 28 L53 28 L53 29 L53 28 L54 28 L54 28 L54 29 L55 29 L55 29 L55 29 L56 29 L56 30 L56 30 L57 30 L57 30 L57 31 L58 30 L58 30 L58 31 L59 31 L59 31 L59 31 L60 32 L60 32 L60 32 L61 32 L61 32 L61 33 L62 33 L62 33 L62 33 L63 33 L63 33 L63 33 L64 34 L64 34 L64 33 L65 32 L65 32 L65 31 L66 30 L66 30 L66 30 L67 29 L67 30 L67 31 L68 31 L68 30 L68 30 L69 30 L69 30 L69 33 L70 34 L70 34 L70 35 L71 34 L71 34 L71 34 L72 34 L72 34 L72 33 L73 33 L73 33 L73 33 L74 33 L74 33 L74 34 L75 34 L75 34 L75 34 L76 33 L76 33 L76 34 L77 34 L77 34 L77 34 L78 34 L78 34 L78 34 L79 34 L79 34 L79 34"
+              ></path>
+              0
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="circleList">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+  <div class="mainRight"></div>
+</div>

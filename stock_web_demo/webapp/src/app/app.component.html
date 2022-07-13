@@ -1,0 +1,19 @@
+<div class="header">
+  <div class="nav">
+    <div class="logo">
+      <img src="../assets/img/logo.png" alt="">
+    </div>
+    <div class="navList">
+      <div class="navItem" [routerLink]="['/index']" routerLinkActive="router-link-active">FrontPage</div>
+      <div class="navItem" [routerLink]="['/screener']" routerLinkActive="router-link-active">Filter</div>
+      <div class="navItem" [routerLink]="['/newstock']" routerLinkActive="router-link-active">New Stock</div>
+    </div>
+    <div class="search">
+      <input type="text" placeholder="Search">
+      <span class="searchIcon"></span>
+    </div>
+  </div>
+</div>
+
+
+<router-outlet></router-outlet>

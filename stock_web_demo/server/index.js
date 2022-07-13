@@ -2,7 +2,13 @@ let express = require('express');
 let axios = require('axios');
 
 let app = express();
+app.use((req, res, next) => {
+  res.append('Access-Control-Allow-Origin', ['*']);
+  res.append('Access-Control-Allow-Methods', ['GET', 'PUT', 'POST', 'DELETE']);
+  res.append('Access-Control-Allow-Headers', ['Content-Type', 'Authorization']);
+  next();
 
+})
 app.get('/', (req, res) => {
   res.send('apiServer');
 });
