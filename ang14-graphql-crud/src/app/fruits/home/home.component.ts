@@ -46,6 +46,7 @@ export class HomeComponent implements OnInit {
             var allData = store.readQuery<{ allFruits: Fruits[] }>({
               query: GET_Fruits,
             });
+            
             if (allData && allData?.allFruits.length > 0) {
               var newData: Fruits[] = [...allData.allFruits];
               newData = newData.filter(_ => _.id !== this.idToDelete);
