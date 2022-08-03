@@ -1,0 +1,48 @@
+<div class="container">
+  <legend>Edit Item</legend>
+  <form>
+    <div class="mb-3">
+      <label for="txtName" class="form-label">Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="txtName"
+        aria-describedby="emailHelp"
+        [(ngModel)]="fruitForm.name"
+        [ngModelOptions]="{standalone: true}"
+      />
+      <div id="emailHelp" class="form-text">
+        Please input the name of the fruit.
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="txtQuantity" class="form-label">Quantity</label>
+      <input
+        type="number"
+        class="form-control"
+        id="txtQuantity"
+        aria-describedby="emailHelp"
+        [(ngModel)]="fruitForm.quantity"
+        [ngModelOptions]="{standalone: true}"
+      />
+      <div id="emailHelp" class="form-text">
+        Please input the quantity of the fruit.
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="txtPrice" class="form-label">Price</label>
+      <input
+        type="number"
+        class="form-control"
+        id="txtPrice"
+        aria-describedby="emailHelp"
+        [(ngModel)]="fruitForm.price"
+        [ngModelOptions]="{standalone: true}"
+      />
+      <div id="emailHelp" class="form-text">
+        Please input the price of the fruit.
+      </div>
+      <button class="btn btn-primary" (click)="update()">update</button>
+    </div>
+  </form>
+</div>
